@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles.css">
+    <title>Odin To-Do List</title>
+</head>
+<body>
+    <div id="content">
+        <div class="form-heading">
+            <h1>Add New ToDo To Project</h1>
+        </div>
+        <div class="todos-heading">
+            <h1>Current ToDo's in Projects</h1>
+        </div>
+        <div class="form">
+            <button class="add-todo-btn">Add New Task</button>
+            <div id="add-todo-form" style="display: none;">
+                <form id="add-todo">
+                    <label for="Project">Project</label>
+                    <select id="Project" name="Project">
+                        <option value="Default Project">Default Project</option>
+                        <option value="Create-new-project">Create New Project</option>
+                    </select>
+                    <label for="Title">Title :</label>
+                    <input type="text" id="Title" name="Title">
+                    <label for="Description">Description :</label>
+                    <input type="text" id="Description" name="Description">
+                    <label for="dueDate">Due Date :</label>
+                    <input type="datetime" id="dueDate" name="dueDate">
+                    <label for="Priority">Priority :</label>
+                    <select id="Priority" name="Priority">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                    <label for="checkList">Checklist Items</label>
+                    <ul class="todo-ul"></ul>
+                </form>
+                <input type="text" id="add-to-checklist" name="add-to-checklist" placeholder="add-to-checklist">
+                <button class="add-to-checklist">Add Task to Checklist</button>
+                <br>
+                <button type="submit" class="submit-btn">Add Todo</button>
+                <button type="reset" class="reset-btn">Reset Form</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
